@@ -1,6 +1,6 @@
 export interface BookListType {
   books: BookType[];
-  total: number;
+  total?: number;
 }
 
 export interface BookType {

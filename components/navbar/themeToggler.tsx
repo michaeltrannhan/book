@@ -90,25 +90,25 @@ export function ModeToggle() {
   const { theme, setTheme } = useTheme();
   return (
     <div className="flex items-center align-middle mt-1 space-x-2">
-      <TooltipProvider>
+      {/* <TooltipProvider>
         <Tooltip>
-          <TooltipTrigger>
-            <Switch
-              id="theme"
-              onCheckedChange={() => {
-                if (theme === "light") {
-                  setTheme("dark");
-                } else {
-                  setTheme("light");
-                }
-              }}
-            />
-          </TooltipTrigger>
+          <TooltipTrigger> */}
+      <Switch
+        id="theme"
+        onCheckedChange={() => {
+          if (theme === "light") {
+            setTheme("dark");
+          } else {
+            setTheme("light");
+          }
+        }}
+      />
+      {/* </TooltipTrigger>
           <TooltipContent>
             {theme === "light" ? "Change to dark mode" : "Change to light mode"}
           </TooltipContent>
         </Tooltip>
-      </TooltipProvider>
+      </TooltipProvider> */}
     </div>
   );
 }

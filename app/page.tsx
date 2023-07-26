@@ -24,9 +24,9 @@ export default function Home() {
           <CardDescription>Book List</CardDescription>
         </CardHeader>
         <CardContent className="grid grid-cols-3 gap-4">
-          Hello
+          Explore all books from our library
         </CardContent>
-        <CardFooter className="text-center">
+        <CardFooter className="flex align-middle justify-center text-center">
           <Button onClick={() => router.push("/books")}>View All Books</Button>
         </CardFooter>
       </Card>

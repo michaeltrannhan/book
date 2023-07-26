@@ -1,3 +1,4 @@
+"use client";
 import { BookType } from "@/types/commons";
 import React from "react";
 import {
@@ -25,10 +26,10 @@ const BookDetails = (props: Props) => {
     <Card>
       <CardHeader>
         <CardTitle>
-          <h3 className="text-3xl font-semibold">{props.book.title}</h3>
+          <div className="text-3xl font-semibold">{props.book.title}</div>
         </CardTitle>
         <CardDescription>Author: {props.book.author}</CardDescription>
-        <CardDescription className="flex">
+        <CardContent className="flex">
           <span>Genre: </span>
           <div className="flex ml-4">
             <Badge variant="outline">ABC</Badge>
@@ -36,10 +37,10 @@ const BookDetails = (props: Props) => {
             <Badge variant="outline">BCD</Badge>
             <Badge variant="outline">Sci-fi</Badge>
           </div>
-        </CardDescription>
+        </CardContent>
       </CardHeader>
       <CardContent>
-        <Accordion type="single" collapsible>
+        <Accordion type="multiple">
           <AccordionItem value="item-1">
             <AccordionTrigger>
               <h3 className="text-lg font-semibold">Description</h3>

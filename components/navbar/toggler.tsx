@@ -11,7 +11,7 @@ const Toggler = (props: Props) => {
     <div className="flex">
       <ModeToggle />
       {/* <LanguageSwitcher /> */}
-      <MobileNav />
+      {/* <MobileNav /> */}
     </div>
   );
 };
